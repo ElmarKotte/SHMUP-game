@@ -23,12 +23,17 @@ public class PlayerFire : MonoBehaviour
             Fire();
         }
     }
+    private void FixedUpdate()
+    {
+        
+    }
 
     public void Fire()
     {
         GameObject bullet = Instantiate(playerBullet, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.forward * bulletForce, ForceMode2D.Impulse);
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        rb.AddForce(0, 0, bulletForce, ForceMode.Impulse);
+        //rb.AddForce(firePoint.forward * bulletForce);
         fireTimer = 0;
     }
 }
