@@ -123,6 +123,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &240815291
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_Name
+      value: Enemy Simple shuttle (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071079
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914891954257341695, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: pattern
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
 --- !u!1001 &264687467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,10 +194,6 @@ PrefabInstance:
     - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_Name
       value: Enemy Simple shuttle (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_RootOrder
@@ -152,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.09
+      value: 7.81
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -182,21 +239,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1300916084910088507, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: fireRate
-      value: 0.5
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+--- !u!1001 &317730467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_Name
+      value: Enemy Simple shuttle (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 1300916084910088507, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: bulletForce
-      value: 50
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 1914891954257341695, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: pattern
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071079
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8893087081573735023, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: m_Layer
-      value: 9
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
@@ -211,17 +309,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Simple shuttle (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.94
+      value: -10.02
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_LocalPosition.y
@@ -259,21 +353,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1300916084910088507, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: fireRate
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1300916084910088507, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: bulletForce
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 1914891954257341695, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: pattern
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8893087081573735023, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
@@ -360,6 +442,185 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
+--- !u!1001 &905634716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_Name
+      value: Enemy Simple shuttle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071079
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914891954257341695, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: pattern
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+--- !u!1001 &1467035907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_Name
+      value: Enemy Simple shuttle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071079
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+--- !u!1001 &1467079983
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_Name
+      value: Enemy Simple shuttle (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071079
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914891954257341695, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: pattern
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
 --- !u!1 &1695744473
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +714,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &302404660623245602
+--- !u!1001 &2068822862
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -462,19 +723,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_Name
-      value: Enemy Simple shuttle
-      objectReference: {fileID: 0}
-    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: m_Layer
-      value: 9
+      value: Enemy Simple shuttle (8)
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.69
+      value: -2.52
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_LocalPosition.y
@@ -482,7 +739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.09
+      value: -5.14
       objectReference: {fileID: 0}
     - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -512,17 +769,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1300916084910088507, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: fireRate
-      value: 0.5
+    - target: {fileID: 1914891954257341695, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: pattern
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1300916084910088507, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: bulletForce
-      value: 50
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+--- !u!1001 &302404660623245602
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_Name
+      value: Enemy Simple shuttle
       objectReference: {fileID: 0}
-    - target: {fileID: 8893087081573735023, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
-      propertyPath: m_Layer
-      value: 9
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071079
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302404660587663547, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914891954257341695, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+      propertyPath: pattern
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
