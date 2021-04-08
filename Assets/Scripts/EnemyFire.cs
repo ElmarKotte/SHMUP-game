@@ -26,7 +26,7 @@ public class EnemyFire : MonoBehaviour
     {
         GameObject bullet = Instantiate(enemyBullelt, enemyFirePoint.position, enemyFirePoint.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        rb.AddForce(0, 0, bulletForce, ForceMode.Impulse);   
+        rb.AddForce(transform.up * -1 * bulletForce, ForceMode.Impulse);   
         fireTimer = 0;
     }
 }
