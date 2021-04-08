@@ -5,6 +5,7 @@ using UnityEngine;
 public class CamaraMover : MonoBehaviour
 {
     public Rigidbody rb;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,6 @@ public class CamaraMover : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.position = rb.position + new Vector3(0, 0, 0.1f);
+        rb.position = rb.position + new Vector3(0, 0, speed);
     }
 }
