@@ -27,6 +27,11 @@ public class enemySpawner : MonoBehaviour
         spawnUfo(2f, Patterns.straightTurn);
         spawnUfo(-2f, Patterns.straightTurn);
         spawnUfo(-5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.diagonal);
+        spawnUfo(2f, Patterns.diagonal);
+        spawnUfo(-2f, Patterns.diagonal);
+        spawnUfo(-5f, Patterns.diagonal);
 
     }
     private void spawnUfo(float offsetX, Patterns ptrn)
