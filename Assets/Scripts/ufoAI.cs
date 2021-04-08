@@ -43,11 +43,9 @@ public class ufoAI : MonoBehaviour
     }
 
     // sets the patern, this function can be used in the EnemySpawner script
-    public void setPatern(int ptrn)
+    public void setPatern(Patterns ptrn)
     {
-        if (ptrn == 0) pattern = Patterns.swerve;
-        if (ptrn == 1) pattern = Patterns.straightTurn;
-        if (ptrn == 2) pattern = Patterns.diagonal;
+        pattern = ptrn;
         Start();
     }
 
