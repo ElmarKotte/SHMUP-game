@@ -6,6 +6,7 @@ public class enemySpawner : MonoBehaviour
 {
     public GameObject enemyUFO;
     public Transform spawnPoint;
+    public Transform enemyList;
 
     public int lvl = 1;
     // Start is called before the first frame update
@@ -39,5 +40,6 @@ public class enemySpawner : MonoBehaviour
         GameObject o = Instantiate(enemyUFO, spawnPoint);
         o.transform.position += new Vector3(offsetX, 0);
         o.GetComponent<ufoAI>().setPatern(ptrn);
+        o.transform.SetParent(enemyList);
     }
 }

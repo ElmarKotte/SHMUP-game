@@ -8,21 +8,29 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth;
     private void Update()
     {
-            // will trikker killed() when no hp is remaining
+        // will trikker killed() when no hp is remaining
         if (health <= 0) killed();
-       
+
     }
 
-        // public function to change health
+    // public function to change health
     public void changeHealth(int change)
     {
         health += change;
     }
 
-        // function to kill the enemy when hp is <= 0
+    // function to kill the enemy when hp is <= 0
     private void killed()
     {
         Destroy(gameObject);
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("EnemyBullet"))
+        {
+            changeHealth(-1);
+            Destroy(collision.collider.gameObject);
+        }
+    }
 }

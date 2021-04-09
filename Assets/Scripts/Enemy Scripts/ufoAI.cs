@@ -47,6 +47,10 @@ public class ufoAI : MonoBehaviour
     {
         pattern = ptrn;
         Start();
+        if (pattern == Patterns.diagonal)
+        {
+            transform.Rotate(0, 0, 45f);
+        }
     }
 
     void Update()
