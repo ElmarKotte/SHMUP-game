@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class LevelFinish : MonoBehaviour
 {
-    // Start is called before the first frame update
+    PlayerMovement player;
+    public GameObject panal;
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
+        panal.SetActive(false);
+        player = GetComponent<PlayerMovement>();
+    }  
     void Update()
     {
         
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("Player"))
+        {
+            panal.SetActive(true);           
+        }
     }
 }

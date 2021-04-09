@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tim test.unity
     guid: 331284071d0c2a749be4075d0f8ea70a
+  - enabled: 1
+    path: Assets/Scenes/Elmo test.unity
+    guid: fa1198d728145bc419c3723c8bc085ad
   m_configObjects: {}
