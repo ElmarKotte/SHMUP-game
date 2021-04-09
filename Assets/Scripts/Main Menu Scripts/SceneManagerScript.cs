@@ -8,7 +8,7 @@ public class SceneManagerScript : MonoBehaviour
     private Scene currentScene;
     public void LoadLevelOne()
     {        
-        SceneManager.LoadScene("Tim test");        
+        SceneManager.LoadScene("LVL1");        
     }
     public void LoadLevelTwo()
     {
@@ -16,7 +16,7 @@ public class SceneManagerScript : MonoBehaviour
     }
     public void LoadLevelThree()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Main Menu");
     }
     public void LoadLevelFour()
     {
