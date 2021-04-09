@@ -7,6 +7,12 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public int maxHealth;
     public bool godmode;
+    public gameManager GM;
+
+    public void Start()
+    {
+        GM = FindObjectOfType<gameManager>();
+    }
 
     private void Update()
     {
@@ -27,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
     // function to kill the enemy when hp is <= 0
     private void killed()
     {
+        GM.PlayerGameStates = PlayerGameStates.dead;
         Destroy(gameObject);
     }
 

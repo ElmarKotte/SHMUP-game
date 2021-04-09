@@ -6,20 +6,29 @@ public class LevelFinish : MonoBehaviour
 {
     PlayerMovement player;
     public GameObject panal;
+    public GameObject NextLevelButton;
+    public gameManager GM;
     void Start()
     {
+        NextLevelButton.SetActive(false);
         panal.SetActive(false);
-        player = GetComponent<PlayerMovement>();
+        player = FindObjectOfType<PlayerMovement>();
+        GM = FindObjectOfType<gameManager>();
     }  
     void Update()
     {
-        
+        if(GM.PlayerGameStates == PlayerGameStates.dead)
+        {
+            panal.SetActive(true);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Player"))
         {
-            panal.SetActive(true);           
+            player.speed = 0;
+            panal.SetActive(true);
+            NextLevelButton.SetActive(true);
         }
     }
 }

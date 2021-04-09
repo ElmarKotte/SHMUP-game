@@ -377,6 +377,10 @@ PrefabInstance:
       propertyPath: panal
       value: 
       objectReference: {fileID: 1879172948}
+    - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
+      propertyPath: NextLevelButton
+      value: 
+      objectReference: {fileID: 1879172949}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
 --- !u!1001 &1879172947
@@ -487,6 +491,11 @@ PrefabInstance:
 --- !u!1 &1879172948 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6747663736354880973, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
+  m_PrefabInstance: {fileID: 1879172947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1879172949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6747663735535999373, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
   m_PrefabInstance: {fileID: 1879172947}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1958061637
@@ -869,3 +878,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59a0eccef1bd3c46948c460ed314745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerGameStates: 0
