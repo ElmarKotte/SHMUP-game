@@ -19,6 +19,6 @@ public class CamaraMover : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.position = rb.position + new Vector3(0, 0, speed);
+        rb.velocity = new Vector3(0, 0, speed);
     }
 }

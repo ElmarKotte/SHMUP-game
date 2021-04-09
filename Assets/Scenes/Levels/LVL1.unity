@@ -185,27 +185,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3461690445919435168, guid: 0359a0a11dec9a94196305243d594133, type: 3}
   m_PrefabInstance: {fileID: 662549788}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &194124259 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6559097982152395343, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-  m_PrefabInstance: {fileID: 1916137834}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &194124265
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194124259}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &433940550
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,14 +756,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1678426990863335918, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -7.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678426990863335918, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 28.7
-      objectReference: {fileID: 0}
     - target: {fileID: 2338765364340663602, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -833,58 +804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2338765365905669217, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 28.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2338765365905669217, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 38.8
-      objectReference: {fileID: 0}
     - target: {fileID: 2338765365905669222, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
       propertyPath: enemyList
       value: 
       objectReference: {fileID: 63278686}
-    - target: {fileID: 3121526829993757096, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Size.y
-      value: 39.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 3121526829993757096, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Center.x
-      value: 10.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3121526829993757096, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Center.y
-      value: 7.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 3969730739635876368, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Size.x
-      value: 23.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 3969730739635876368, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Center.y
-      value: 27.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 4157609322320379514, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Size.x
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4157609322320379514, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Center.y
-      value: -8.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8429025673424152658, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Size.y
-      value: 43.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8429025673424152658, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Center.x
-      value: -10.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 8429025673424152658, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
-      propertyPath: m_Center.y
-      value: 6.8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce61d518a005a81479da4083f6fd94c1, type: 3}
 --- !u!1001 &1964070283
