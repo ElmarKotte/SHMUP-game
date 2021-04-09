@@ -6,11 +6,16 @@ public class PlayerHealth : MonoBehaviour
 {
     public int health;
     public int maxHealth;
+    public bool godmode;
+
     private void Update()
     {
         // will trikker killed() when no hp is remaining
         if (health <= 0) killed();
-
+        if (godmode)
+        {
+            health = maxHealth;
+        }
     }
 
     // public function to change health

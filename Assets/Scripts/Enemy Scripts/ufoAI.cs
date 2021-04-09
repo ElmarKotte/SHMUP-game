@@ -27,7 +27,7 @@ public class ufoAI : MonoBehaviour
 
 
     private Vector3 pos;
-    private float timer = 0;
+    private float timer = 1f;
     private float turnCount = 0;
     private bool turnRight = false;
     private bool turnLeft = false;
@@ -102,9 +102,9 @@ public class ufoAI : MonoBehaviour
             timer = 0;
         }
 
-        if (turnRight) pos += Vector3.right * Time.deltaTime * moveSpeed;
+        if (turnRight) pos += Vector3.right * Time.deltaTime * moveSpeed + new Vector3(0, 0, 0.01f);
         if (backwards) pos += Vector3.back * Time.deltaTime * moveSpeed;
-        if (turnLeft) pos += Vector3.left * Time.deltaTime * moveSpeed;
+        if (turnLeft) pos += Vector3.left * Time.deltaTime * moveSpeed + new Vector3(0, 0, 0.01f);
 
         transform.position = pos;
     }

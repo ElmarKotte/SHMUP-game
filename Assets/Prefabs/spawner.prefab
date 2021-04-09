@@ -43,7 +43,7 @@ GameObject:
   m_Layer: 0
   m_Name: spawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -76,4 +76,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyUFO: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
   spawnPoint: {fileID: 2465660125454707243}
+  enemyList: {fileID: 0}
   lvl: 1
