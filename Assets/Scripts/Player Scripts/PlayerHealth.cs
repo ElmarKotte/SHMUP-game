@@ -9,8 +9,11 @@ public class PlayerHealth : MonoBehaviour
     public bool godmode;
     public gameManager GM;
 
+    public HealtBarScript HealtBar;
+
     public void Start()
     {
+        HealtBar.SetMaxHealt(maxHealth);
         GM = FindObjectOfType<gameManager>();
     }
 
@@ -28,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
     public void changeHealth(int change)
     {
         health += change;
+        HealtBar.SetHealth(health);
     }
 
     // function to kill the enemy when hp is <= 0

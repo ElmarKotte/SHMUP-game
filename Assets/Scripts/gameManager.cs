@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum PlayerGameStates
 {
     Alive,
     dead,
-
-}
+}   
 
 public class gameManager : MonoBehaviour
 {
     private int score = 0;
 
     public PlayerGameStates PlayerGameStates;
+    public Text scoreText;
 
 
     void Start()
@@ -29,6 +30,7 @@ public class gameManager : MonoBehaviour
     public void addScore(int add)
     {
         score += add;
+        scoreText.text = score.ToString();
     }
 
     private void resetScore()
