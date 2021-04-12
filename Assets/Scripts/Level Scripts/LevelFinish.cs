@@ -8,6 +8,8 @@ public class LevelFinish : MonoBehaviour
     public GameObject panal;
     public GameObject NextLevelButton;
     public gameManager GM;
+
+    public int Level = 1;
     void Start()
     {
         NextLevelButton.SetActive(false);
@@ -29,6 +31,8 @@ public class LevelFinish : MonoBehaviour
             player.speed = 0;
             panal.SetActive(true);
             NextLevelButton.SetActive(true);
+            gameManager gm = FindObjectOfType<gameManager>();
+            gm.levelEnd(Level);
         }
     }
 }
