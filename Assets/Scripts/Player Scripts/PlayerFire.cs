@@ -54,13 +54,13 @@ public class PlayerFire : MonoBehaviour
         GameObject bulletOne = Instantiate(playerBullet, firePointOne.position, new Quaternion());
         Rigidbody rbOne = bulletOne.GetComponent<Rigidbody>();
         bulletOne.transform.Rotate(new Vector3(0, 20, 0));
-        rbOne.AddForce(10, 0, bulletForce, ForceMode.Impulse);
+        rbOne.AddForce(10, 0, bulletForce - 10, ForceMode.Impulse);
         bulletOne.transform.SetParent(bulletList);
 
         GameObject bulletTwo = Instantiate(playerBullet, firePointTwo.position, new Quaternion());
         Rigidbody rbTwo = bulletTwo.GetComponent<Rigidbody>();
         bulletTwo.transform.Rotate(new Vector3(0, -20, 0));
-        rbTwo.AddForce(-10, 0, bulletForce, ForceMode.Impulse);
+        rbTwo.AddForce(-10, 0, bulletForce - 10, ForceMode.Impulse);
         bulletTwo.transform.SetParent(bulletList);
 
         GameObject bulletThree = Instantiate(playerBullet, firePointOne.position, new Quaternion());
