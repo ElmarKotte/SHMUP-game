@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 1232978149976785981}
   - component: {fileID: 5017382397806482954}
   - component: {fileID: 5889439237518579054}
+  - component: {fileID: -745714721965385530}
+  - component: {fileID: -8321049242585752627}
+  - component: {fileID: -4348929707352314711}
   m_Layer: 11
   m_Name: WormBossPart
   m_TagString: Untagged
@@ -28,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6073822110230330076}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -96,3 +99,65 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-745714721965385530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073822110230330076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6bce0ad6a35bf74ca5ec5f2928f7dde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 0
+  WM: {fileID: 0}
+  health: 0
+  BodyParts: []
+  parts: []
+  minDistance: 2
+  minSpeed: 8
+  currentSpeed: 8
+  boostMultiplier: 1.5
+  speedLoss: 0.2
+  rotationFrequency: 0.15
+  rotationAmmount: 800
+  healthPerPart: 5
+  beginSize: 0
+  wormSpawner: {fileID: 0}
+  headPrefab: {fileID: 0}
+  bodyPrefab: {fileID: 6073822110230330076}
+  isHead: 0
+--- !u!54 &-8321049242585752627
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073822110230330076}
+  serializedVersion: 2
+  m_Mass: 20
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 0
+--- !u!114 &-4348929707352314711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073822110230330076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d808689af1f63054f8f1808c5fdbede8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  WM: {fileID: 0}

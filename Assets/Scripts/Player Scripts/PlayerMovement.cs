@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed; //Speed van de player
     public float rotateSpeed;
 
+    public Vector3 speedOffset = new Vector3(0, 0, 5f);
     private Vector3 currentAngle;
 
     // Start is called before the first frame update
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.velocity = movement * speed * Time.deltaTime + new Vector3(0, 0, 5f);
+        rb.velocity = movement * speed * Time.deltaTime + speedOffset;
     }
     public void Acceleration()
     {

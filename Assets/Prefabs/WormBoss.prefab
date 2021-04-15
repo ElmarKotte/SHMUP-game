@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6975577248332543775}
   - component: {fileID: 4446817371558007344}
   - component: {fileID: 5029122746425937751}
+  - component: {fileID: 745785668}
+  - component: {fileID: 745785667}
   m_Layer: 11
   m_Name: WormBossHead
   m_TagString: Untagged
@@ -96,6 +98,38 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &745785668
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2947963409101916635}
+  serializedVersion: 2
+  m_Mass: 20
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 1
+--- !u!114 &745785667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2947963409101916635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d808689af1f63054f8f1808c5fdbede8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  WM: {fileID: 938847797}
 --- !u!1 &6137312183047492744
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +142,7 @@ GameObject:
   - component: {fileID: 938847797}
   m_Layer: 11
   m_Name: WormBoss
-  m_TagString: Untagged
+  m_TagString: WormBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,8 +155,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6137312183047492744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.6063204, y: -7.335739, z: -7.9105644}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.6063204, y: 0, z: -7.9105644}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 2382778689708191310}
   m_Father: {fileID: 0}
@@ -142,9 +176,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BodyParts:
   - {fileID: 2382778689708191310}
-  minDistance: 0.25
-  speed: 3
-  rotationFrequency: 0.3
-  rotationAmmount: 300
-  beginSize: 5
+  parts: []
+  minDistance: 2
+  minSpeed: 8
+  currentSpeed: 8
+  boostMultiplier: 1.5
+  speedLoss: 0.2
+  rotationFrequency: 0.15
+  rotationAmmount: 800
+  healthPerPart: 5
+  beginSize: 4
+  wormSpawner: {fileID: 0}
+  headPrefab: {fileID: 6137312183047492744}
   bodyPrefab: {fileID: 6073822110230330076, guid: 1f22c7ada818a3348b36e1cc254996d5, type: 3}
