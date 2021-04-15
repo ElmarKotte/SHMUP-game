@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Start()
     {
-        HealtBar.SetMaxHealt(maxHealth);
+        HealtBar = FindObjectOfType<HealtBarScript>();
         GM = FindObjectOfType<gameManager>();
     }
 
@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
     public void changeHealth(int change)
     {
         health += change;
-        HealtBar.SetHealth(health);
+        HealtBar.UpdateHealthBar();
     }
 
     // function to kill the enemy when hp is <= 0

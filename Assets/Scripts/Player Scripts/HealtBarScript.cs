@@ -5,19 +5,16 @@ using UnityEngine.UI;
 
 public class HealtBarScript : MonoBehaviour
 {
+    [SerializeField] Image fillImage;
+    private PlayerHealth playerHealth;
 
-    public Slider slider;
-    // Start is called before the first frame update
-
-
-    public void SetMaxHealt(int Health)
+    private void Start()
     {
-        slider.maxValue = Health;
-        slider.value = Health;
-        
+        playerHealth = FindObjectOfType<PlayerHealth>();
+        fillImage.fillAmount = 1f;
     }
-    public void SetHealth(int health)
+    public void UpdateHealthBar()
     {
-        slider.value = health;
+        fillImage.fillAmount = (1f / playerHealth.maxHealth) * playerHealth.health;
     }
 }
