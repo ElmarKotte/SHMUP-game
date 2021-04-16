@@ -14,8 +14,8 @@ public class SceneManagerScript : MonoBehaviour
     }
     public void LoadLevelTwo()
     {
-        SceneManager.LoadScene("Elmo test");
-        print("LoadLevelTwo");
+        SceneManager.LoadScene("LVL5");
+        print("LoadLevelBOSS");
 
     }
     public void LoadLevelThree()
