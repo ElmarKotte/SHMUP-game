@@ -20,6 +20,7 @@ public class gameManager : MonoBehaviour
     void Start()
     {
         PlayerGameStates = PlayerGameStates.Alive;
+        scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Text>();
     }
 
     void Update()
