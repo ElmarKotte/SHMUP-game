@@ -32,6 +32,11 @@ public class gameManager : MonoBehaviour
         score += add;
         scoreText.text = score.ToString();
     }
+    public void SetScore(int set)
+    {
+        score = set;
+        scoreText.text = score.ToString();
+    }
 
     private void resetScore()
     {

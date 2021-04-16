@@ -6,15 +6,15 @@ public class WormSpawner : MonoBehaviour
 {
     public GameObject wormBossPrefab;
     public GameObject wormBossInstance;
-    void Start()
-    {
-        wormBossInstance = Instantiate(wormBossPrefab, transform.position, Quaternion.identity, transform);
-        wormBossInstance.GetComponent<WormMovement>().spawn();
-    }
+    //void Start()
+    //{
+    //    wormBossInstance = Instantiate(wormBossPrefab, transform.position, Quaternion.identity, transform);
+    //    //wormBossInstance.GetComponent<wormManager>().spawn();
+    //}
 
-    // Update is called once per frame
-    void Update()
-    {
+    //// Update is called once per frame
+    //void Update()
+    //{
         
-    }
+    //}
 }

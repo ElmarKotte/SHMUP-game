@@ -11,6 +11,9 @@ public class PlayerHealth : MonoBehaviour
 
     public HealtBarScript HealtBar;
 
+    public float invisTime;
+    float invisTimer;
+
     public void Start()
     {
         HealtBar = FindObjectOfType<HealtBarScript>();
@@ -25,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
         {
             health = maxHealth;
         }
+        invisTimer += Time.deltaTime;
     }
 
     // public function to change health
@@ -32,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
     {
         health += change;
         HealtBar.UpdateHealthBar();
+        invisTimer = 0;
     }
 
     // function to kill the enemy when hp is <= 0
@@ -43,10 +48,24 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("EnemyBullet"))
+        if (invisTimer >= invisTime)
         {
-            changeHealth(-1);
-            Destroy(collision.collider.gameObject);
+            if (collision.collider.CompareTag("EnemyBullet"))
+            {
+                changeHealth(-1);
+                Destroy(collision.collider.gameObject);
+            }
+
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (invisTimer >= invisTime)
+        {
+            if (other.CompareTag("WormBoss"))
+            {
+                changeHealth(-1);
+            }
         }
     }
 }

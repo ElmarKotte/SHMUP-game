@@ -7,9 +7,10 @@ public class WormPart : MonoBehaviour
     public int MaxHealth;
     public WormMovement WM;
     public int health;
+    public LayerMask playerLayerMask;
+    public GameObject front;
+    public GameObject back;
 
-    public List<Transform> BodyParts = new List<Transform>();
-    public List<GameObject> parts = new List<GameObject>();
     public float minDistance = 0.25f;
     public float minSpeed = 1f;
     public float currentSpeed = 1f;
@@ -28,32 +29,12 @@ public class WormPart : MonoBehaviour
     private float previousPerlin = 0;
     private float mapTime;
     private float distance;
-    private Transform currentBoddypart;
-    private Transform prevBoddypart;
-
     public bool isHead = false;
+    public bool isBack = false;
 
-    Transform par;
-    bool parentFound = false;
     void Start()
     {
-        parts.Add(gameObject);
-        BodyParts.Add(gameObject.transform);
-        par = transform;
-        while (!parentFound)
-        {
-            if (par.CompareTag("WormBoss"))
-            {
-                parentFound = true;
-            }
-            else
-            {
-                par = par.parent;
-            }
-        }
-        MaxHealth = par.GetComponent<WormMovement>().healthPerPart;
         health = MaxHealth;
-
         mapTime = Random.Range(0, 9999);
     }
 
@@ -64,60 +45,47 @@ public class WormPart : MonoBehaviour
         float currentPerlin = Mathf.PerlinNoise(mapTime, 0);
         float R = (currentPerlin - previousPerlin) * rotationAmmount;
 
-        BodyParts[0].Rotate(new Vector3(0, R, 0));
+        transform.Rotate(new Vector3(0, R, 0));
         previousPerlin = currentPerlin;
     }
 
     // Deze funcite beweegt alle body parts achter de gene voor zich aan 
     public void Move()
     {
-        BodyParts[0].Translate(BodyParts[0].forward * currentSpeed * Time.smoothDeltaTime, Space.World);
-        Rotate();
-
-        // i begint op 1 omdat de head niks heeft als PreviousBoddyPart en dus ook niet zo hoeft te bewegen
-        for (int i = 1; i < BodyParts.Count; i++)
+        if (isHead)
         {
-            currentBoddypart = BodyParts[i];
-            prevBoddypart = BodyParts[i - 1];
-
-            distance = Vector3.Distance(prevBoddypart.position, currentBoddypart.position);
-            Vector3 newPos = prevBoddypart.position;
-            newPos.y = BodyParts[0].position.y;
-
+            transform.Translate(transform.forward * currentSpeed * Time.smoothDeltaTime, Space.World);
+            Rotate();
+        }
+        else
+        {
+            distance = Vector3.Distance(front.transform.position, transform.position);
+            Vector3 newPos = front.transform.position;
+            newPos.y = transform.position.y;
+            print(newPos);
             float T = Time.deltaTime * distance / minDistance * currentSpeed;
 
             if (T > 0.5f)
                 T = 0.5f;
 
-            currentBoddypart.position = Vector3.Slerp(currentBoddypart.position, newPos, T);
-            currentBoddypart.rotation = Quaternion.Slerp(currentBoddypart.rotation, prevBoddypart.rotation, T);
+            transform.position = Vector3.Slerp(transform.position, newPos, T);
+            transform.rotation = Quaternion.Slerp(transform.rotation, transform.rotation, T);
         }
 
     }
-    public void CheckForNewHead()
+    public void CheckHealth()
     {
-
-        wormSpawner = GameObject.FindGameObjectWithTag("WormSpawner").transform;
-
-        for (int i = 1; i < parts.Count; i++)
+        if (health <= 0)
         {
-            if (parts[i] != null)
+            if (!isHead)
             {
-                WormPart script = parts[i].GetComponent<WormPart>();
-                if (script.health <= 0)
-                {
-                    //GameObject GO = Instantiate(headPrefab, parts[i].transform.position, Quaternion.identity, wormSpawner);
-                    BodyParts.Remove(parts[i].transform);
-                    GameObject newHead = parts[i];
-                    parts.Remove(parts[i]);
-                    script.health = 5;
-                    for (int j = i; j < parts.Count; j++)
-                    {
-                        parts[i].transform.parent = newHead.transform;
-                    }
-                }
+                front.GetComponent<WormPart>().isBack = true;
             }
-
+            if (!isBack)
+            {
+                back.GetComponent<WormPart>().isHead = true;
+            }
+            Destroy(gameObject);
         }
     }
     public void Boost()
@@ -127,7 +95,6 @@ public class WormPart : MonoBehaviour
 
     void Update()
     {
-        
         if (isHead)
         {
             currentSpeed -= speedLoss * Time.deltaTime;
@@ -135,8 +102,28 @@ public class WormPart : MonoBehaviour
             {
                 currentSpeed = minSpeed;
             }
-            CheckForNewHead();
-            Move();
+
+            RaycastHit hit;
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.white);
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 10, playerLayerMask))
+            {
+                Boost();
+            }
+        }
+        CheckHealth();
+        Move();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("PlayerBullet"))
+        {
+            health--;
+        }
+        if (collision.collider.CompareTag("Bounds"))
+        {
+            Vector3 newDirection = Vector3.Reflect(transform.forward, collision.contacts[0].normal);
+            transform.rotation = Quaternion.LookRotation(newDirection);
         }
     }
 }
