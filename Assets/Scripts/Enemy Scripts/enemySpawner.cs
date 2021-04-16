@@ -2,11 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum EnemyType
+{
+    UFOGreen,
+    UFORed
+}
+
 public class enemySpawner : MonoBehaviour
 {
-    public GameObject enemyUFO;
+    public GameObject enemyUFOGreen;
+    public GameObject enemyUFORed;
     public Transform spawnPoint;
     public Transform enemyList;
+    public EnemyType enemyType;
 
     public int lvl = 1;
     // Start is called before the first frame update
@@ -52,9 +61,23 @@ public class enemySpawner : MonoBehaviour
     }
     private void spawnUfo(float offsetX, Patterns ptrn)
     {
-        GameObject o = Instantiate(enemyUFO, spawnPoint);
-        o.transform.position += new Vector3(offsetX, 0);
-        o.GetComponent<ufoAI>().setPatern(ptrn);
-        o.transform.SetParent(enemyList);
+        if (enemyType == EnemyType.UFOGreen)
+        {
+            GameObject o = Instantiate(enemyUFOGreen, spawnPoint);
+            o.transform.position += new Vector3(offsetX, 0);
+            o.GetComponent<ufoAI>().setPatern(ptrn);
+            o.transform.SetParent(enemyList);
+        }
+        if (enemyType == EnemyType.UFORed)
+        {
+            GameObject o = Instantiate(enemyUFORed, spawnPoint);
+            o.transform.position += new Vector3(offsetX, 0);
+            o.GetComponent<ufoAI>().setPatern(ptrn);
+            o.transform.SetParent(enemyList);
+        }
+        //GameObject o = Instantiate(enemyUFOGreen, spawnPoint);
+        //o.transform.position += new Vector3(offsetX, 0);
+        //o.GetComponent<ufoAI>().setPatern(ptrn);
+        //o.transform.SetParent(enemyList);
     }
 }

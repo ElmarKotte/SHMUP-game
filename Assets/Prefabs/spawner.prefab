@@ -74,7 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3d9184efb8c10419fa78fd8dab684c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyUFO: {fileID: 302404660587663543, guid: fbdfeb4bc6ecedb429c1f54739ea1b34, type: 3}
+  enemyUFOGreen: {fileID: 0}
+  enemyUFORed: {fileID: 0}
   spawnPoint: {fileID: 2465660125454707243}
   enemyList: {fileID: 0}
   lvl: 1
