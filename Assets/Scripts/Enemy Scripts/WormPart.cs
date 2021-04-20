@@ -63,7 +63,7 @@ public class WormPart : MonoBehaviour
             distance = Vector3.Distance(front.transform.position, transform.position);
             Vector3 newPos = front.transform.position;
             newPos.y = transform.position.y;
-            print(newPos);
+
             float T = Time.deltaTime * distance / minDistance * currentSpeed;
 
             if (T > 0.5f)
@@ -88,6 +88,8 @@ public class WormPart : MonoBehaviour
             }
             GameObject exp = Instantiate(explosion);
             exp.transform.position = transform.position;
+            GameObject cam = FindObjectOfType<Camera>().gameObject;
+            StartCoroutine(cam.GetComponent<CameraShake>().Shake(0.75f, 5f));
             Destroy(gameObject);
         }
     }

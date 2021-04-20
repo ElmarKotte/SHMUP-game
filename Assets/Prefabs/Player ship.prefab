@@ -89,7 +89,7 @@ MonoBehaviour:
   godmode: 0
   GM: {fileID: 0}
   HealtBar: {fileID: 0}
-  invisTime: 0
+  invisTime: 1
 --- !u!114 &2069423226327440189
 MonoBehaviour:
   m_ObjectHideFlags: 0
