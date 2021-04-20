@@ -102,9 +102,9 @@ public class ufoAI : MonoBehaviour
             timer = 0;
         }
 
-        if (turnRight) pos += Vector3.right * Time.deltaTime * moveSpeed + new Vector3(0, 0, 0.01f);
-        if (backwards) pos += Vector3.back * Time.deltaTime * moveSpeed;
-        if (turnLeft) pos += Vector3.left * Time.deltaTime * moveSpeed + new Vector3(0, 0, 0.01f);
+        if (turnRight) pos += (Vector3.right * moveSpeed + new Vector3(0, 0, 0.01f)) * Time.deltaTime;
+        if (backwards) pos += Vector3.back * moveSpeed * Time.deltaTime;
+        if (turnLeft) pos += (Vector3.left * moveSpeed + new Vector3(0, 0, 0.01f)) * Time.deltaTime;
 
         transform.position = pos;
     }
