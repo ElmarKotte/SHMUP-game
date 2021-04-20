@@ -156,13 +156,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 5
-  WM: {fileID: 0}
   health: 5
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 64
   front: {fileID: 0}
   back: {fileID: 0}
+  hitExplosion: {fileID: 2662023555751424265, guid: 72ffd964583b5184aa75589486b1f03f, type: 3}
+  explosion: {fileID: 2662023555751424265, guid: 5d05772cd5958b24baedc3c48658d8d4, type: 3}
   minDistance: 2.05
   minSpeed: 12
   currentSpeed: 8

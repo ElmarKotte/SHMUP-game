@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPerPart: 10
   beginSize: 12
-  HighestScore: 10000
+  HighestScore: 1000
   scoreLoweringFactor: 20
   bodyPartPrefab: {fileID: 6073822110230330076, guid: 1f22c7ada818a3348b36e1cc254996d5, type: 3}
   levelFinishScreen: {fileID: 0}

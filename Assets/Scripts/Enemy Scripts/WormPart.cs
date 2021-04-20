@@ -5,11 +5,12 @@ using UnityEngine;
 public class WormPart : MonoBehaviour
 {
     public int MaxHealth;
-    public WormMovement WM;
     public int health;
     public LayerMask playerLayerMask;
     public GameObject front;
     public GameObject back;
+    public GameObject hitExplosion;
+    public GameObject explosion;
 
     public float minDistance = 0.25f;
     public float minSpeed = 1f;
@@ -85,6 +86,8 @@ public class WormPart : MonoBehaviour
             {
                 back.GetComponent<WormPart>().isHead = true;
             }
+            GameObject exp = Instantiate(explosion);
+            exp.transform.position = transform.position;
             Destroy(gameObject);
         }
     }
@@ -118,6 +121,8 @@ public class WormPart : MonoBehaviour
     {
         if (collision.collider.CompareTag("PlayerBullet"))
         {
+            GameObject exp = Instantiate(hitExplosion);
+            exp.transform.position = collision.collider.transform.position;
             health--;
         }
         if (collision.collider.CompareTag("Bounds"))

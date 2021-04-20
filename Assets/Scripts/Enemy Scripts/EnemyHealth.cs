@@ -7,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
     public int health;
     public int maxHealth;
 
+    public GameObject explosion;
+    public GameObject hitExplosion;
     public gameManager GM;
     public LayerMask collisionLayers;
     public LayerMask playerLayer;
@@ -30,17 +32,19 @@ public class EnemyHealth : MonoBehaviour
     // function to kill the enemy when hp is <= 0
     private void killed()
     {
+        GameObject exp = Instantiate(explosion);
+        exp.transform.position = transform.position;
         GM.addScore(100);
         Destroy(gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("trigger enterd " + collision.collider.name);
         if (collision.collider.CompareTag("PlayerBullet"))
         {
-            print("Changing health of " + gameObject.name);
             changeHealth(-1);
+            GameObject exp = Instantiate(hitExplosion);
+            exp.transform.position = collision.collider.transform.position;
         }
 
         if (collision.collider.CompareTag("Player"))
