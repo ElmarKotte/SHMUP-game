@@ -833,6 +833,10 @@ PrefabInstance:
       propertyPath: enemyList
       value: 
       objectReference: {fileID: 2053303665}
+    - target: {fileID: 9211076475538084903, guid: 39a0da89bb71f31439955de877362562, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -29.02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39a0da89bb71f31439955de877362562, type: 3}
 --- !u!1 &978430886

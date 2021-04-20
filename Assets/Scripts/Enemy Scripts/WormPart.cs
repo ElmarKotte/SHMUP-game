@@ -131,6 +131,7 @@ public class WormPart : MonoBehaviour
         {
             Vector3 newDirection = Vector3.Reflect(transform.forward, collision.contacts[0].normal);
             transform.rotation = Quaternion.LookRotation(newDirection);
+            print("new dir = " + newDirection);
         }
     }
 }
