@@ -12,17 +12,27 @@ public enum FireMode
 
 public class PlayerFire : MonoBehaviour
 {
+
     public GameObject playerBullet;
+
     public Transform firePointOne;
     public Transform firePointTwo;
     private Transform bulletList;
+
     private float fireTimer;
     public float bulletForce;
-    public FireMode fireMode;
     [SerializeField] private float fireRate;
+
+    public FireMode fireMode;
+
+    AudioSource audioSource;
+    public AudioClip fire;
+
+  
     void Start()
     {
         bulletList = GameObject.Find("BulletList").transform;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,6 +41,7 @@ public class PlayerFire : MonoBehaviour
         fireTimer = fireTimer + Time.deltaTime;
         if (Input.GetButton("Fire1") && fireTimer > fireRate)
         {
+            audioSource.PlayOneShot(fire, 0.5f);
             if (fireMode == FireMode.normal || fireMode == FireMode.fast)
                 FireNormal();
             if (fireMode == FireMode.spread)
