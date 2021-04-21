@@ -58,3 +58,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panal: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelComplete: {fileID: 0}
+  paused: {fileID: 0}
+  levelDone: 0
+  NextLevelButton: {fileID: 0}
+  GM: {fileID: 0}
+  isMenuUp: 0
+  Level: 1

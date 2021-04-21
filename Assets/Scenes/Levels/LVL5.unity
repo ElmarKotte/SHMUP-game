@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &112319315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 962934497, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
+  m_PrefabInstance: {fileID: 1680939301}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &256888294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -183,9 +188,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 849613416}
     - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
+      propertyPath: Level
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
       propertyPath: panal
       value: 
       objectReference: {fileID: 603284781}
+    - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
+      propertyPath: paused
+      value: 
+      objectReference: {fileID: 666253299}
+    - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 112319315}
+    - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
+      propertyPath: levelComplete
+      value: 
+      objectReference: {fileID: 269007567}
     - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
       propertyPath: NextLevelButton
       value: 
@@ -209,6 +230,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd6345914fb7a646b8dd83bf8e9fa41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &269007567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 18621871, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
+  m_PrefabInstance: {fileID: 1680939301}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &311446562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -498,6 +524,11 @@ MonoBehaviour:
 --- !u!1 &603284781 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6747663735218696297, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
+  m_PrefabInstance: {fileID: 1680939301}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &666253299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1566715323, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
   m_PrefabInstance: {fileID: 1680939301}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &849613416 stripped
