@@ -122,15 +122,14 @@ public class WormPart : MonoBehaviour
 
         if (!isHead)
         {
-        transform.LookAt(front.transform, Vector3.up);
+            transform.LookAt(front.transform, Vector3.up);
+            modleHead.SetActive(false);
+            modleBoddy.SetActive(true);
         }
         else
         {
-            if (modleHead.activeInHierarchy == false)
-            {
-                modleHead.SetActive(true);
-                modleBoddy.SetActive(false);
-            }
+            modleHead.SetActive(true);
+            modleBoddy.SetActive(false);
         }
     }
 
