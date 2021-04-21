@@ -74,8 +74,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3d9184efb8c10419fa78fd8dab684c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyUFOGreen: {fileID: 0}
-  enemyUFORed: {fileID: 0}
+  enemyUFOGreen: {fileID: 302404660587663543, guid: 464ceb05dc70be7469a97b9bf9b363d1, type: 3}
+  enemyUFORed: {fileID: 302404660587663543, guid: dde79233bec1f90419a7e4aa0212bbc7, type: 3}
+  commet: {fileID: 309112122937890348, guid: bc094c997d390ee4e8bf93bc80e0b3ca, type: 3}
   spawnPoint: {fileID: 2465660125454707243}
   enemyList: {fileID: 0}
+  enemyType: 0
   lvl: 1

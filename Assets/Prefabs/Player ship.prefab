@@ -89,8 +89,9 @@ MonoBehaviour:
   maxHealth: 5
   godmode: 0
   GM: {fileID: 0}
+  explosion: {fileID: 2662023555751424265, guid: 5d05772cd5958b24baedc3c48658d8d4, type: 3}
   HealtBar: {fileID: 0}
-  invisTime: 1
+  invisTime: 0.5
 --- !u!114 &2069423226327440189
 MonoBehaviour:
   m_ObjectHideFlags: 0

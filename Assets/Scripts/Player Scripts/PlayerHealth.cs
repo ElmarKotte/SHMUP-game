@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth;
     public bool godmode;
     public gameManager GM;
+    public GameObject explosion;
 
     public HealtBarScript HealtBar;
 
@@ -37,6 +38,9 @@ public class PlayerHealth : MonoBehaviour
         health += change;
         HealtBar.UpdateHealthBar();
         invisTimer = 0;
+        GameObject exp = Instantiate(explosion);
+        exp.transform.position = transform.position;
+        FindObjectOfType<CameraShake>().StartShake(0.3f, 0.1f);
     }
 
     // function to kill the enemy when hp is <= 0
@@ -54,6 +58,11 @@ public class PlayerHealth : MonoBehaviour
             {
                 changeHealth(-1);
                 Destroy(collision.collider.gameObject);
+            }
+            if (collision.collider.CompareTag("Commet"))
+            {
+                health = 0;
+                HealtBar.UpdateHealthBar();
             }
 
         }

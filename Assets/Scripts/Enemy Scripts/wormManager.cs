@@ -9,6 +9,7 @@ public class wormManager : MonoBehaviour
     public int HighestScore;
     public int scoreLoweringFactor;
     public GameObject bodyPartPrefab;
+    public GameObject firstPartPrefab;
     public GameObject levelFinishScreen;
     public gameManager gm;
     private GameObject prevSpawn;
@@ -17,11 +18,11 @@ public class wormManager : MonoBehaviour
     void Start()
     {
         score = HighestScore;
-        AddBoddyPart(true , false);
+        AddBoddyPart(true, false);
         // Maak de aantal body parts aan zodra de worm spawnt
         for (int i = 0; i < beginSize - 2; i++)
         {
-            AddBoddyPart( false, false);
+            AddBoddyPart(false, false);
         }
 
         AddBoddyPart(false, true);
@@ -31,7 +32,8 @@ public class wormManager : MonoBehaviour
     public void AddBoddyPart(bool isFirst, bool isLast)
     {
         Transform newParent = transform;
-        Transform newpart = Instantiate(bodyPartPrefab, transform.position, transform.rotation).transform;
+        Transform newpart;
+        newpart = Instantiate(bodyPartPrefab, transform.position, transform.rotation).transform;
         WormPart newScript = newpart.GetComponent<WormPart>();
         newScript.MaxHealth = healthPerPart;
         newScript.health = healthPerPart;

@@ -1247,6 +1247,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5459461383898379198, guid: 18270116b3c0c5144a654f60d9a75bf7, type: 3}
+      propertyPath: firstPartPrefab
+      value: 
+      objectReference: {fileID: 6073822110230330076, guid: 46704aed95a7a0b4992881fc4121af6d, type: 3}
+    - target: {fileID: 5459461383898379198, guid: 18270116b3c0c5144a654f60d9a75bf7, type: 3}
       propertyPath: levelFinishScreen
       value: 
       objectReference: {fileID: 603284781}

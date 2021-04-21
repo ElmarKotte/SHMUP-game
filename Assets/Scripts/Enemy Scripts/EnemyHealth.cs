@@ -6,6 +6,8 @@ public class EnemyHealth : MonoBehaviour
 {
     public int health;
     public int maxHealth;
+    public int scoreGain;
+    public bool isCommet = false;
 
     public GameObject explosion;
     public GameObject hitExplosion;
@@ -34,8 +36,8 @@ public class EnemyHealth : MonoBehaviour
     {
         GameObject exp = Instantiate(explosion);
         exp.transform.position = transform.position;
-        FindObjectOfType<CameraShake>().StartShake(0.3f,0.1f);
-        GM.addScore(100);
+        FindObjectOfType<CameraShake>().StartShake(0.3f, 0.1f);
+        GM.addScore(scoreGain);
         Destroy(gameObject);
     }
 
@@ -50,8 +52,16 @@ public class EnemyHealth : MonoBehaviour
 
         if (collision.collider.CompareTag("Player"))
         {
-            collision.collider.GetComponent<PlayerHealth>().changeHealth(-1);
-            killed();
+            if (isCommet)
+            {
+                collision.collider.GetComponent<PlayerHealth>().health = 0;
+
+            }
+            else
+            {
+                collision.collider.GetComponent<PlayerHealth>().changeHealth(-1);
+                killed();
+            }
         }
     }
 }

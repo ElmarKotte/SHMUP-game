@@ -11,6 +11,8 @@ public class WormPart : MonoBehaviour
     public GameObject back;
     public GameObject hitExplosion;
     public GameObject explosion;
+    public GameObject modleHead;
+    public GameObject modleBoddy;
 
     public float minDistance = 0.25f;
     public float minSpeed = 1f;
@@ -117,6 +119,19 @@ public class WormPart : MonoBehaviour
         }
         CheckHealth();
         Move();
+
+        if (!isHead)
+        {
+        transform.LookAt(front.transform, Vector3.up);
+        }
+        else
+        {
+            if (modleHead.activeInHierarchy == false)
+            {
+                modleHead.SetActive(true);
+                modleBoddy.SetActive(false);
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   maxHealth: 3
+  scoreGain: 150
   explosion: {fileID: 2662023555751424265, guid: 5d05772cd5958b24baedc3c48658d8d4, type: 3}
   hitExplosion: {fileID: 2662023555751424265, guid: 72ffd964583b5184aa75589486b1f03f, type: 3}
   GM: {fileID: 0}

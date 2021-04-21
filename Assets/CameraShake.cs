@@ -23,7 +23,6 @@ public class CameraShake : MonoBehaviour
             transform.localPosition = new Vector3(x, y, origin.z);
 
             elapsed += Time.deltaTime;
-            print("elapsed " + elapsed + " and duration " + duration);
 
             yield return null;
         }
