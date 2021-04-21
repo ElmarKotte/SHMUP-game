@@ -296,22 +296,6 @@ PrefabInstance:
       propertyPath: GM
       value: 
       objectReference: {fileID: 93449419}
-    - target: {fileID: 2069423226327440162, guid: b5015dabefd5c64408577d7f79ce101f, type: 3}
-      propertyPath: health
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2069423226327440162, guid: b5015dabefd5c64408577d7f79ce101f, type: 3}
-      propertyPath: HealtBar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2069423226327440162, guid: b5015dabefd5c64408577d7f79ce101f, type: 3}
-      propertyPath: maxHealth
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2069423226327440189, guid: b5015dabefd5c64408577d7f79ce101f, type: 3}
-      propertyPath: maxSpeed
-      value: 500
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5015dabefd5c64408577d7f79ce101f, type: 3}
 --- !u!1001 &746818002
@@ -511,7 +495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364892020}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 2.2}
+  m_LocalPosition: {x: 0, y: 8.8, z: 2.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -8,26 +8,49 @@ public class LevelFinish : MonoBehaviour
     public GameObject panal;
     public GameObject NextLevelButton;
     public gameManager GM;
-
+    public bool isMenuUp = false;
+    
     public int Level = 1;
     void Start()
     {
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
         NextLevelButton.SetActive(false);
         panal.SetActive(false);
         player = FindObjectOfType<PlayerMovement>();
         GM = FindObjectOfType<gameManager>();
-    }  
+    }
     void Update()
     {
-        if(GM.PlayerGameStates == PlayerGameStates.dead)
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (isMenuUp == false)
+            {                
+                Time.timeScale = 0;
+                panal.SetActive(true);
+                Cursor.lockState = CursorLockMode.Confined;
+                isMenuUp = true;
+            }
+            else if (isMenuUp == true)
+            {                
+                Time.timeScale = 1;
+                panal.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
+                isMenuUp = false;               
+            }
+        }
+
+        if (GM.PlayerGameStates == PlayerGameStates.dead)
         {
             panal.SetActive(true);
         }
+       
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Player"))
         {
+            Cursor.lockState = CursorLockMode.Confined;
             player.speed = 0;
             panal.SetActive(true);
             NextLevelButton.SetActive(true);

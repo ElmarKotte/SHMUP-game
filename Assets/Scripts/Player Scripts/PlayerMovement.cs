@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.z = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)|| (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
         {
             Acceleration();
         }
@@ -80,12 +80,35 @@ public class PlayerMovement : MonoBehaviour
             Quaternion wantedRotation = Quaternion.Euler(70, 0, 90);
             transform.rotation = Quaternion.RotateTowards(currentRotation, wantedRotation, Time.deltaTime * rotateSpeed);
         }
-        if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.A))
+        {
+            Quaternion currentRotation = transform.rotation;
+            Quaternion wantedRotation = Quaternion.Euler(70, 90, 180);
+            transform.rotation = Quaternion.RotateTowards(currentRotation, wantedRotation, Time.deltaTime * rotateSpeed);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            Quaternion currentRotation = transform.rotation;
+            Quaternion wantedRotation = Quaternion.Euler(70, -90, 0);
+            transform.rotation = Quaternion.RotateTowards(currentRotation, wantedRotation, Time.deltaTime * rotateSpeed);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            Quaternion currentRotation = transform.rotation;
+            Quaternion wantedRotation = Quaternion.Euler(110, 0, 90);
+            transform.rotation = Quaternion.RotateTowards(currentRotation, wantedRotation, Time.deltaTime * rotateSpeed);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            Quaternion currentRotation = transform.rotation;
+            Quaternion wantedRotation = Quaternion.Euler(70, 0, 90);
+            transform.rotation = Quaternion.RotateTowards(currentRotation, wantedRotation, Time.deltaTime * rotateSpeed);
+        }
+        if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
         {
             Quaternion currentRotation = transform.rotation;
             Quaternion wantedRotation = Quaternion.Euler(90, 0, 90);
             transform.rotation = Quaternion.RotateTowards(currentRotation, wantedRotation, Time.deltaTime * rotateSpeed);
-
         }
     }
 }
