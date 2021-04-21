@@ -89,7 +89,7 @@ public class WormPart : MonoBehaviour
             GameObject exp = Instantiate(explosion);
             exp.transform.position = transform.position;
             CameraShake camShake = FindObjectOfType<CameraShake>();
-            camShake.StartShake(0.3f, 0.07f);
+            camShake.StartShake(0.3f, 0.1f);
             Destroy(gameObject);
         }
     }
