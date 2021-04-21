@@ -4,26 +4,32 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    public IEnumerator Shake (float duration, float magnitude)
+    public void StartShake(float duration, float magnitude)
     {
-        //Vector3 origin = transform.localPosition;
+        StartCoroutine(Shake(duration, magnitude));
+    }
 
-        //float elapsed = 0f;
+    IEnumerator Shake (float duration, float magnitude)
+    {
+        Vector3 origin = transform.localPosition;
 
-        //while (elapsed < duration)
-        //{
-        //    float x = Random.Range(-1, 1f) * magnitude;
-        //    float y = Random.Range(-1, 1f) * magnitude;
+        float elapsed = 0f;
 
-        //    transform.localPosition = new Vector3(x, y, origin.z);
+        while (elapsed < duration)
+        {
+            float x = Random.Range(-1, 1f) * magnitude;
+            float y = Random.Range(-1, 1f) * magnitude;
 
-        //    elapsed += Time.deltaTime;
-        //    print("elapsed " + elapsed + " and duration " + duration);
+            transform.localPosition = new Vector3(x, y, origin.z);
 
+            elapsed += Time.deltaTime;
+            print("elapsed " + elapsed + " and duration " + duration);
+
+            yield return null;
+        }
+
+
+        transform.localPosition = new Vector3(0, 0, 0);
         yield return null;
-        //}
-
-
-        //transform.localPosition = new Vector3(0,0,0);
     }
 }

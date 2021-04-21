@@ -88,8 +88,8 @@ public class WormPart : MonoBehaviour
             }
             GameObject exp = Instantiate(explosion);
             exp.transform.position = transform.position;
-            GameObject cam = FindObjectOfType<Camera>().gameObject;
-            StartCoroutine(cam.GetComponent<CameraShake>().Shake(0.75f, 5f));
+            CameraShake camShake = FindObjectOfType<CameraShake>();
+            camShake.StartShake(0.3f, 0.07f);
             Destroy(gameObject);
         }
     }

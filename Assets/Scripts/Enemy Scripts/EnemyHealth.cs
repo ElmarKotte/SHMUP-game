@@ -34,6 +34,7 @@ public class EnemyHealth : MonoBehaviour
     {
         GameObject exp = Instantiate(explosion);
         exp.transform.position = transform.position;
+        FindObjectOfType<CameraShake>().StartShake(0.3f,0.05f);
         GM.addScore(100);
         Destroy(gameObject);
     }
