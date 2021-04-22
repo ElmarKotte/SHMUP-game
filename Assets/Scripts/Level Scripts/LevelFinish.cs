@@ -15,7 +15,8 @@ public class LevelFinish : MonoBehaviour
     public bool isMenuUp = false;
 
     AudioSource audioSource;
-    public AudioClip fire;
+    public AudioClip Death;
+    public AudioClip Win;
 
     public int Level = 1;
     void Start()
@@ -55,6 +56,7 @@ public class LevelFinish : MonoBehaviour
 
         if (GM.PlayerGameStates == PlayerGameStates.dead)
         {
+            audioSource.PlayOneShot(Death, 1f);
             panal.SetActive(true);
             gameOver.SetActive(true);
             paused.SetActive(false);
@@ -70,7 +72,7 @@ public class LevelFinish : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Confined;
             player.speed = 0;
-          
+            audioSource.PlayOneShot(Win, 1f);
             panal.SetActive(true);
             paused.SetActive(false);
             levelDone = true;
