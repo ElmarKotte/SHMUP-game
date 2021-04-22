@@ -14,6 +14,7 @@ TagManager:
   - Commet
   - FinalScore
   - FinalHighScore
+  - BoundsKill
   layers:
   - Default
   - TransparentFX

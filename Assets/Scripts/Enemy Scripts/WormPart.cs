@@ -147,5 +147,11 @@ public class WormPart : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(newDirection);
             print("new dir = " + newDirection);
         }
+
+        if (collision.collider.CompareTag("BoundsKill"))
+        {
+            health = 0;
+            CheckHealth();
+        }
     }
 }

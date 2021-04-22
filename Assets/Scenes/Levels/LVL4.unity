@@ -2761,6 +2761,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1599280115}
     - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
+      propertyPath: Win
+      value: 
+      objectReference: {fileID: 8300000, guid: 81394879fcd2ebe46815ca257ae4a12b, type: 3}
+    - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
+      propertyPath: Death
+      value: 
+      objectReference: {fileID: 8300000, guid: 91fef5b33c31bef43a3c2d3818c2f286, type: 3}
+    - target: {fileID: 4565745931972835966, guid: 27d85fb18ab846845adc454f5ad97f7c, type: 3}
       propertyPath: Level
       value: 4
       objectReference: {fileID: 0}
