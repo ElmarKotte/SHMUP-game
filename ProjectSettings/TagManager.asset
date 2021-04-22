@@ -12,6 +12,8 @@ TagManager:
   - WormBoss
   - ScoreText
   - Commet
+  - FinalScore
+  - FinalHighScore
   layers:
   - Default
   - TransparentFX

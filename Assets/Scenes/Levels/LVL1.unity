@@ -1248,6 +1248,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5851500164473564697, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
+      propertyPath: m_TagString
+      value: FinalScore
+      objectReference: {fileID: 0}
     - target: {fileID: 6747663736354880961, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1335,6 +1339,10 @@ PrefabInstance:
     - target: {fileID: 6747663736354880973, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
       propertyPath: m_Name
       value: Menu Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354806181426323831, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
+      propertyPath: m_TagString
+      value: FinalHighScore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd19921489c08674bac5db9d36fdec56, type: 3}

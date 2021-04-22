@@ -23,6 +23,8 @@ public class gameManager : MonoBehaviour
     {
         PlayerGameStates = PlayerGameStates.Alive;
         scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Text>();
+        finalScoreText = GameObject.FindGameObjectWithTag("FinalScore").GetComponent<Text>();
+        highScoreText = GameObject.FindGameObjectWithTag("FinalHighScore").GetComponent<Text>();
     }
 
     void Update()

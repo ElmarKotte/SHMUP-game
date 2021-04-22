@@ -72,7 +72,7 @@ public class LevelFinish : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Confined;
             player.speed = 0;
-            audioSource.PlayOneShot(Win, 1f);
+            //audioSource.PlayOneShot(Win, 1f);
             panal.SetActive(true);
             paused.SetActive(false);
             levelDone = true;
