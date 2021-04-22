@@ -19,13 +19,9 @@ public class LevelFinish : MonoBehaviour
     public AudioClip Win;
 
     public int Level = 1;
-    void Start()
-    {
-        StartCoroutine("LateStart");
-    }
-    IEnumerator LateStart()
-    {
-        yield return new WaitForSeconds(0.1f);
+
+    public void Start()
+    {      
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
         NextLevelButton.SetActive(false);
@@ -36,7 +32,7 @@ public class LevelFinish : MonoBehaviour
         paused.SetActive(false);
         player = FindObjectOfType<PlayerMovement>();
         GM = FindObjectOfType<gameManager>();
-    }
+    }                
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -61,13 +57,13 @@ public class LevelFinish : MonoBehaviour
 
         if (GM.PlayerGameStates == PlayerGameStates.dead)
         {
-            audioSource.PlayOneShot(Death, 1f);
+       
             panal.SetActive(true);
             gameOver.SetActive(true);
             paused.SetActive(false);
-
-
+            Cursor.lockState = CursorLockMode.Confined;
             levelComplete.SetActive(false);
+            audioSource.PlayOneShot(Death, 1f);
         }
        
     }

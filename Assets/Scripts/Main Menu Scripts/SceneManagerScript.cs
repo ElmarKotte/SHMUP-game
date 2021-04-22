@@ -13,22 +13,22 @@ public class SceneManagerScript : MonoBehaviour
     }
     public void LoadLevelTwo()
     {
-        SceneManager.LoadScene("LVL5");
+        SceneManager.LoadScene("LVL2");
         print("LoadLevelBOSS");
     }
     public void LoadLevelThree()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("LVL3");
         print("LoadLevelThree");
     }
     public void LoadLevelFour()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("LVL4");
         print("LoadLevelFour");
     }
     public void LoadLevelFive()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("LVL5");
         print("LoadLevelFive");
 
     }
