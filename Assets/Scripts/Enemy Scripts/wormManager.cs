@@ -59,6 +59,7 @@ public class wormManager : MonoBehaviour
     {
         if (transform.childCount == 0)
         {
+            FindObjectOfType<LevelFinish>().levelDone = true;
             levelFinishScreen.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
             gm.levelEnd(5);
