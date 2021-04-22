@@ -58,13 +58,12 @@ public class LevelFinish : MonoBehaviour
 
         if (GM.PlayerGameStates == PlayerGameStates.dead)
         {
-       
             panal.SetActive(true);
             gameOver.SetActive(true);
             paused.SetActive(false);
-            Cursor.lockState = CursorLockMode.Confined;
-            levelComplete.SetActive(false);
             audioSource.PlayOneShot(Death, 1f);
+            Cursor.lockState = CursorLockMode.Confined;
+            levelComplete.SetActive(false);            
         }
        
     }
@@ -73,8 +72,8 @@ public class LevelFinish : MonoBehaviour
         if (other.transform.CompareTag("Player"))
         {
             Cursor.lockState = CursorLockMode.Confined;
-            player.speed = 0;
-            //audioSource.PlayOneShot(Win, 1f);
+            player.maxSpeed = 0;
+            audioSource.PlayOneShot(Win, 1f);
             panal.SetActive(true);
             paused.SetActive(false);
             levelDone = true;
