@@ -39,7 +39,7 @@ public class PlayerFire : MonoBehaviour
     void Update()
     {
         fireTimer = fireTimer + Time.deltaTime;
-        if (Input.GetButton("Fire1") && fireTimer > fireRate)
+        if (Input.GetButton("Fire1") || Input.GetKey(KeyCode.Space) && fireTimer > fireRate)
         {
             audioSource.PlayOneShot(fire, 0.5f);
             if (fireMode == FireMode.normal || fireMode == FireMode.fast)

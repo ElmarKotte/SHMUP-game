@@ -13,7 +13,10 @@ public class LevelFinish : MonoBehaviour
     public GameObject NextLevelButton;
     public gameManager GM;
     public bool isMenuUp = false;
-    
+
+    AudioSource audioSource;
+    public AudioClip fire;
+
     public int Level = 1;
     void Start()
     {
@@ -55,6 +58,7 @@ public class LevelFinish : MonoBehaviour
             panal.SetActive(true);
             gameOver.SetActive(true);
             paused.SetActive(false);
+
 
             levelComplete.SetActive(false);
         }
