@@ -15,6 +15,9 @@ public class wormManager : MonoBehaviour
     private GameObject prevSpawn;
     private float score;
 
+    public bool mainScipt = true;
+    public Transform otherBoss;
+
     void Start()
     {
         score = HighestScore;
@@ -57,18 +60,21 @@ public class wormManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount == 0)
+        if (mainScipt)
         {
-            FindObjectOfType<LevelFinish>().levelDone = true;
-            levelFinishScreen.SetActive(true);
-            Cursor.lockState = CursorLockMode.Confined;
-            gm.levelEnd(5);
+            if (transform.childCount == 0 && otherBoss.childCount == 0)
+            {
+                FindObjectOfType<LevelFinish>().levelDone = true;
+                levelFinishScreen.SetActive(true);
+                Cursor.lockState = CursorLockMode.Confined;
+                gm.levelEnd(5);
+            }
+            if (score <= 0)
+            {
+                score = 0;
+            }
+            score -= scoreLoweringFactor * Time.deltaTime;
+            gm.SetScore((int)score);
         }
-        if (score <= 0)
-        {
-            score = 0;
-        }
-        score -= scoreLoweringFactor * Time.deltaTime;
-        gm.SetScore((int)score);
     }
 }

@@ -619,6 +619,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5459461383898379198, guid: 18270116b3c0c5144a654f60d9a75bf7, type: 3}
+      propertyPath: mainScipt
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459461383898379198, guid: 18270116b3c0c5144a654f60d9a75bf7, type: 3}
       propertyPath: healthPerPart
       value: 13
       objectReference: {fileID: 0}
@@ -636,6 +640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18270116b3c0c5144a654f60d9a75bf7, type: 3}
+--- !u!4 &859828430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 875379726289983749, guid: 18270116b3c0c5144a654f60d9a75bf7, type: 3}
+  m_PrefabInstance: {fileID: 859828429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &901860137 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6747663736354880961, guid: dd19921489c08674bac5db9d36fdec56, type: 3}
@@ -1390,6 +1399,10 @@ PrefabInstance:
       propertyPath: beginSize
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5459461383898379198, guid: 18270116b3c0c5144a654f60d9a75bf7, type: 3}
+      propertyPath: otherBoss
+      value: 
+      objectReference: {fileID: 859828430}
     - target: {fileID: 5459461383898379198, guid: 18270116b3c0c5144a654f60d9a75bf7, type: 3}
       propertyPath: healthPerPart
       value: 13
