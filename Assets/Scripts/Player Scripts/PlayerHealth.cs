@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         invisTimer = 0;
         GameObject exp = Instantiate(explosion);
         exp.transform.position = transform.position;
-        FindObjectOfType<CameraShake>().StartShake(0.3f, 0.1f);
+        FindObjectOfType<CameraShake>().StartShake(0.8f, 0.3f);
     }
 
     // function to kill the enemy when hp is <= 0
