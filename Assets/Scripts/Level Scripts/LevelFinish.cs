@@ -21,6 +21,11 @@ public class LevelFinish : MonoBehaviour
     public int Level = 1;
     void Start()
     {
+        StartCoroutine("LateStart");
+    }
+    IEnumerator LateStart()
+    {
+        yield return new WaitForSeconds(0.1f);
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
         NextLevelButton.SetActive(false);
