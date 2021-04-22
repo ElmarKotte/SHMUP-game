@@ -22,10 +22,6 @@ public class WormPart : MonoBehaviour
     public float rotationFrequency = 50f;
     public float rotationAmmount = 50f;
 
-    public int healthPerPart;
-
-    public int beginSize;
-
     public Transform wormSpawner;
     public GameObject headPrefab;
     public GameObject bodyPrefab;

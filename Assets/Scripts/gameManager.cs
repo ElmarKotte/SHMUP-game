@@ -45,6 +45,7 @@ public class gameManager : MonoBehaviour
 
     private void resetScore()
     {
+        
         score = 0;
     }
 

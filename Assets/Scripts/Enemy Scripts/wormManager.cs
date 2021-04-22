@@ -36,12 +36,12 @@ public class wormManager : MonoBehaviour
     public void AddBoddyPart(bool isFirst, bool isLast)
     {
         Transform newParent = transform;
-        Transform newpart;
-        newpart = Instantiate(bodyPartPrefab, transform.position, transform.rotation).transform;
-        WormPart newScript = newpart.GetComponent<WormPart>();
+        Transform newPart;
+        newPart = Instantiate(bodyPartPrefab, transform.position, transform.rotation).transform;
+        WormPart newScript = newPart.GetComponent<WormPart>();
         newScript.MaxHealth = healthPerPart;
         newScript.health = healthPerPart;
-        newpart.SetParent(newParent);
+        newPart.SetParent(newParent);
         if (isFirst)
         {
             newScript.isHead = true;
@@ -49,13 +49,13 @@ public class wormManager : MonoBehaviour
         else
         {
             newScript.front = prevSpawn;
-            prevSpawn.GetComponent<WormPart>().back = newpart.gameObject;
+            prevSpawn.GetComponent<WormPart>().back = newPart.gameObject;
         }
         if (isLast)
         {
             newScript.isBack = true;
         }
-        prevSpawn = newpart.gameObject;
+        prevSpawn = newPart.gameObject;
     }
 
     // Update is called once per frame
