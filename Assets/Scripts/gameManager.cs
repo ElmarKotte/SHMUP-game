@@ -15,6 +15,8 @@ public class gameManager : MonoBehaviour
 
     public PlayerGameStates PlayerGameStates;
     public Text scoreText;
+    public Text finalScoreText;
+    public Text highScoreText;
 
 
     void Start()
@@ -43,10 +45,18 @@ public class gameManager : MonoBehaviour
     {
         score = 0;
     }
+
     public void levelEnd(int level)
     {
         setHighScore(level);
+        finalScoreText.text = score.ToString();
+        highScoreText.text = getHighScore(level).ToString();
         resetScore();
+    }
+    private int getHighScore(int level)
+    {
+        string pref = "HighScoreLVL" + level;
+        return PlayerPrefs.GetInt(pref);
     }
     private void setHighScore(int level)
     {
