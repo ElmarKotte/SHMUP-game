@@ -25,6 +25,8 @@ public class PlayerFire : MonoBehaviour
 
     public FireMode fireMode;
 
+    LevelFinish levelFinish;
+
     AudioSource audioSource;
     public AudioClip fire;
 
@@ -33,6 +35,7 @@ public class PlayerFire : MonoBehaviour
     {
         bulletList = GameObject.Find("BulletList").transform;
         audioSource = GetComponent<AudioSource>();
+        levelFinish = FindObjectOfType<LevelFinish>();
     }
 
     // Update is called once per frame
@@ -41,14 +44,16 @@ public class PlayerFire : MonoBehaviour
         fireTimer = fireTimer + Time.deltaTime;
         if (Input.GetButton("Fire1") && fireTimer > fireRate || Input.GetKey(KeyCode.Space) && fireTimer > fireRate)
         {
-            audioSource.PlayOneShot(fire, 0.5f);
-            if (fireMode == FireMode.normal || fireMode == FireMode.fast)
-                FireNormal();
-            if (fireMode == FireMode.spread)
-                FireSpread();
-            if (fireMode == FireMode.super) 
-            FireSuper();
-
+            if(levelFinish.isMenuUp == false)
+            {
+                audioSource.PlayOneShot(fire, 0.5f);
+                if (fireMode == FireMode.normal || fireMode == FireMode.fast)
+                    FireNormal();
+                if (fireMode == FireMode.spread)
+                    FireSpread();
+                if (fireMode == FireMode.super)
+                    FireSuper();
+            }
         }
     }
     private void FixedUpdate()
