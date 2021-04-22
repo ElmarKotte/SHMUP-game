@@ -97,6 +97,82 @@ public class enemySpawner : MonoBehaviour
         
         spawnCommet(6f);
         spawnCommet(7.5f);
+        setUfoType(EnemyType.UFOGreen);
+        yield return new WaitForSeconds(5f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(1f);
+        spawnCommet(-4f);
+        spawnCommet(-3f);
+        spawnCommet(-2f);
+        spawnCommet(-1f);
+        spawnCommet(2f);
+        spawnCommet(3f);
+        spawnCommet(4f);
+        spawnCommet(5f);
+        yield return new WaitForSeconds(3f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(1f);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(2f, Patterns.straightTurn);
+        spawnUfo(-2f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.diagonal);
+        spawnUfo(2f, Patterns.diagonal);
+        spawnUfo(-2f, Patterns.diagonal);
+        spawnUfo(-5f, Patterns.diagonal);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(-5f, Patterns.diagonal);
+        spawnUfo(1f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-4f, Patterns.diagonal);
+        spawnUfo(2f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-3f, Patterns.diagonal);
+        spawnUfo(3f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-2f, Patterns.diagonal);
+        spawnUfo(4f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-1f, Patterns.diagonal);
+        spawnUfo(5f, Patterns.diagonal);
+        yield return new WaitForSeconds(2f);
+        spawnCommet(-7.5f);
+        spawnCommet(-6f);
+
+
+        spawnCommet(-3f);
+        spawnCommet(-2f);
+
+
+
+        spawnCommet(2f);
+        spawnCommet(3f);
+
+
+        spawnCommet(6f);
+        spawnCommet(7.5f);
 
         yield return new WaitForSeconds(4f);
         spawnUfo(-5f, Patterns.diagonal);
@@ -137,6 +213,16 @@ public class enemySpawner : MonoBehaviour
         spawnCommet(3f);
         spawnCommet(4f);
         spawnCommet(5f);
+        yield return new WaitForSeconds(3f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
     }
     private IEnumerator lvlThree()
     {
@@ -192,6 +278,76 @@ public class enemySpawner : MonoBehaviour
         spawnUfo(2f, Patterns.diagonal);
         setUfoType(EnemyType.UFOGreen);
         spawnUfo(3f, Patterns.diagonal);
+        yield return new WaitForSeconds(5f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(1f);
+        spawnCommet(-4f);
+        spawnCommet(-3f);
+        spawnCommet(-2f);
+        spawnCommet(-1f);
+        spawnCommet(2f);
+        spawnCommet(3f);
+        spawnCommet(4f);
+        spawnCommet(5f);
+        yield return new WaitForSeconds(3f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(1f);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(2f, Patterns.straightTurn);
+        spawnUfo(-2f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.diagonal);
+        spawnUfo(2f, Patterns.diagonal);
+        spawnUfo(-2f, Patterns.diagonal);
+        spawnUfo(-5f, Patterns.diagonal);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(-5f, Patterns.diagonal);
+        spawnUfo(1f, Patterns.diagonal);
+        yield return new WaitForSeconds(1f);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(2f, Patterns.straightTurn);
+        spawnUfo(-2f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-4f, Patterns.diagonal);
+        spawnUfo(2f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-3f, Patterns.diagonal);
+        spawnUfo(3f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-2f, Patterns.diagonal);
+        spawnUfo(4f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-1f, Patterns.diagonal);
+        spawnUfo(5f, Patterns.diagonal);
+        yield return new WaitForSeconds(2f);
         yield return new WaitForSeconds(0.5f);
         spawnUfo(-7.5f, Patterns.swerve);
         spawnUfo(-6f, Patterns.swerve);
@@ -216,6 +372,7 @@ public class enemySpawner : MonoBehaviour
         spawnUfo(6f, Patterns.straightTurn);
         spawnUfo(7.5f, Patterns.straightTurn);
         setUfoType(EnemyType.UFOGreen);
+
         yield return new WaitForSeconds(1f);
         spawnCommet(-4f);
         spawnCommet(-3f);
@@ -225,6 +382,28 @@ public class enemySpawner : MonoBehaviour
         spawnCommet(3f);
         spawnCommet(4f);
         spawnCommet(5f);
+        yield return new WaitForSeconds(5f);
+        setUfoType(EnemyType.UFORed);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
+        setUfoType(EnemyType.UFOGreen);
+        yield return new WaitForSeconds(1f);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(2f, Patterns.straightTurn);
+        spawnUfo(-2f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
     }
     private IEnumerator lvlFour()
     {
@@ -270,38 +449,190 @@ public class enemySpawner : MonoBehaviour
         spawnUfo(5f, Patterns.swerve);
         spawnUfo(4f, Patterns.swerve);
         spawnCommet(0f);
-        yield return new WaitForSeconds(4f);
-        spawnCommet(2f);
-        spawnCommet(1f);
-        spawnCommet(0f);
-        spawnCommet(-1f);
-        spawnCommet(-2f);
-        yield return new WaitForSeconds(0.7f);
-        spawnCommet(7f);
-        spawnCommet(6f);
-        spawnCommet(5f);
-        spawnCommet(4f);
-        spawnCommet(-4f);
-        spawnCommet(-5f);
+        yield return new WaitForSeconds(1f);
+        setUfoType(EnemyType.UFOGreen);
+        spawnUfo(-7.5f, Patterns.swerve);
+        spawnUfo(-6f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        spawnUfo(-4f, Patterns.swerve);
+        spawnUfo(-3f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(3f, Patterns.swerve);
+        spawnUfo(4f, Patterns.swerve);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(6f, Patterns.swerve);
+        spawnUfo(7.5f, Patterns.swerve);
+        yield return new WaitForSeconds(2f);
+        spawnCommet(-7.5f);
         spawnCommet(-6f);
-        spawnCommet(-7f); 
-        yield return new WaitForSeconds(0.7f);
-        spawnCommet(2f);
-        spawnCommet(1f);
-        spawnCommet(0f);
-        spawnCommet(-1f);
+
+
+        spawnCommet(-3f);
         spawnCommet(-2f);
-        yield return new WaitForSeconds(1.5f);
-        setUfoType(EnemyType.UFORed);
-        spawnUfo(-7f, Patterns.diagonal);
+
+
+
+        spawnCommet(2f);
+        spawnCommet(3f);
+
+
+        spawnCommet(6f);
+        spawnCommet(7.5f);
+        setUfoType(EnemyType.UFOGreen);
+        yield return new WaitForSeconds(5f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(1f);
+        spawnCommet(-4f);
+        spawnCommet(-3f);
+        spawnCommet(-2f);
+        spawnCommet(-1f);
+        spawnCommet(2f);
+        spawnCommet(3f);
+        spawnCommet(4f);
+        spawnCommet(5f);
+        yield return new WaitForSeconds(3f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        yield return new WaitForSeconds(1f);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        yield return new WaitForSeconds(1f);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        yield return new WaitForSeconds(1f);
+        spawnUfo(5f, Patterns.swerve);
+        spawnUfo(2f, Patterns.swerve);
+        spawnUfo(-2f, Patterns.swerve);
+        spawnUfo(-5f, Patterns.swerve);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(2f, Patterns.straightTurn);
+        spawnUfo(-2f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(5f, Patterns.diagonal);
+        spawnUfo(2f, Patterns.diagonal);
+        spawnUfo(-2f, Patterns.diagonal);
         spawnUfo(-5f, Patterns.diagonal);
+        yield return new WaitForSeconds(2f);
+        spawnUfo(-5f, Patterns.diagonal);
+        spawnUfo(1f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-4f, Patterns.diagonal);
+        spawnUfo(2f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
         spawnUfo(-3f, Patterns.diagonal);
+        spawnUfo(3f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
+        spawnUfo(-2f, Patterns.diagonal);
+        spawnUfo(4f, Patterns.diagonal);
+        yield return new WaitForSeconds(0.5f);
         spawnUfo(-1f, Patterns.diagonal);
+        spawnUfo(5f, Patterns.diagonal);
+        yield return new WaitForSeconds(2f);
+        spawnCommet(-7.5f);
+        spawnCommet(-6f);
+
+
+        spawnCommet(-3f);
+        spawnCommet(-2f);
+
+
+
+        spawnCommet(2f);
+        spawnCommet(3f);
+
+
+        spawnCommet(6f);
+        spawnCommet(7.5f);
+
+        yield return new WaitForSeconds(4f);
+        spawnUfo(-5f, Patterns.diagonal);
+        spawnUfo(-4f, Patterns.diagonal);
+        spawnUfo(-3f, Patterns.diagonal);
+        spawnUfo(-2f, Patterns.diagonal);
+
         spawnUfo(0f, Patterns.diagonal);
         spawnUfo(1f, Patterns.diagonal);
+        spawnUfo(2f, Patterns.diagonal);
         spawnUfo(3f, Patterns.diagonal);
-        spawnUfo(5f, Patterns.diagonal);
-        spawnUfo(7f, Patterns.diagonal);
+        yield return new WaitForSeconds(4f);
+        setUfoType(EnemyType.UFORed);
+        spawnUfo(-5f, Patterns.diagonal);
+        setUfoType(EnemyType.UFOGreen);
+        spawnUfo(-4f, Patterns.diagonal);
+        setUfoType(EnemyType.UFORed);
+        spawnUfo(-3f, Patterns.diagonal);
+        setUfoType(EnemyType.UFOGreen);
+        spawnUfo(-2f, Patterns.diagonal);
+
+        setUfoType(EnemyType.UFORed);
+        spawnUfo(0f, Patterns.diagonal);
+        setUfoType(EnemyType.UFOGreen);
+        spawnUfo(1f, Patterns.diagonal);
+        setUfoType(EnemyType.UFORed);
+        spawnUfo(2f, Patterns.diagonal);
+        setUfoType(EnemyType.UFOGreen);
+        spawnUfo(3f, Patterns.diagonal);
+        yield return new WaitForSeconds(5f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);
+        yield return new WaitForSeconds(1f);
+        spawnCommet(-4f);
+        spawnCommet(-3f);
+        spawnCommet(-2f);
+        spawnCommet(-1f);
+        spawnCommet(2f);
+        spawnCommet(3f);
+        spawnCommet(4f);
+        spawnCommet(5f);
+        yield return new WaitForSeconds(3f);
+        spawnUfo(-7.5f, Patterns.straightTurn);
+        spawnUfo(-6f, Patterns.straightTurn);
+        spawnUfo(-5f, Patterns.straightTurn);
+
+        spawnUfo(0f, Patterns.straightTurn);
+
+        spawnUfo(5f, Patterns.straightTurn);
+        spawnUfo(6f, Patterns.straightTurn);
+        spawnUfo(7.5f, Patterns.straightTurn);     
+
+       
+   
+      
     }
     private void spawnCommet(float offsetX)
     {

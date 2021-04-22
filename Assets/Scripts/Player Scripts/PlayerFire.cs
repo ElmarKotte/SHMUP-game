@@ -46,7 +46,7 @@ public class PlayerFire : MonoBehaviour
         {
             if(levelFinish.isMenuUp == false)
             {
-                audioSource.PlayOneShot(fire, 0.5f);
+                audioSource.PlayOneShot(fire, 0.2f);
                 if (fireMode == FireMode.normal || fireMode == FireMode.fast)
                     FireNormal();
                 if (fireMode == FireMode.spread)

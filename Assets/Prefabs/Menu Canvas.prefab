@@ -82,7 +82,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: level completet
+  m_Text: level completed
 --- !u!1 &962934497
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerGameStates: 0
   scoreText: {fileID: 1259336310}
+  finalScoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
 --- !u!1 &1566715323
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +432,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerGameStates: 0
   scoreText: {fileID: 1708653555}
+  finalScoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
 --- !u!1 &773799161331213666
 GameObject:
   m_ObjectHideFlags: 0

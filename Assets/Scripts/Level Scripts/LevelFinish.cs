@@ -26,6 +26,7 @@ public class LevelFinish : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         NextLevelButton.SetActive(false);
         levelDone = false;
+        audioSource = GetComponent<AudioSource>();
         panal.SetActive(false);
         levelComplete.SetActive(false);
         gameOver.SetActive(false);

@@ -10,6 +10,7 @@ public class wormManager : MonoBehaviour
     public int scoreLoweringFactor;
     public GameObject bodyPartPrefab;
     public GameObject firstPartPrefab;
+    public GameObject levelCompleet;
     public GameObject levelFinishScreen;
     public gameManager gm;
     private GameObject prevSpawn;
@@ -66,6 +67,7 @@ public class wormManager : MonoBehaviour
             {
                 FindObjectOfType<LevelFinish>().levelDone = true;
                 levelFinishScreen.SetActive(true);
+                levelCompleet.SetActive(true);
                 Cursor.lockState = CursorLockMode.Confined;
                 gm.levelEnd(5);
             }
@@ -73,7 +75,10 @@ public class wormManager : MonoBehaviour
             {
                 score = 0;
             }
-            score -= scoreLoweringFactor * Time.deltaTime;
+            if (FindObjectOfType<LevelFinish>().levelDone == false)
+            {
+                score -= scoreLoweringFactor * Time.deltaTime;
+            }
             gm.SetScore((int)score);
         }
     }
