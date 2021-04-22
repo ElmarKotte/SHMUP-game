@@ -10,13 +10,11 @@ public class SceneManagerScript : MonoBehaviour
     {        
         SceneManager.LoadScene("LVL1");
         print("LoadLevelOne");
-
     }
     public void LoadLevelTwo()
     {
         SceneManager.LoadScene("LVL5");
         print("LoadLevelBOSS");
-
     }
     public void LoadLevelThree()
     {
@@ -52,4 +50,5 @@ public class SceneManagerScript : MonoBehaviour
     {
         Application.Quit();
     }
+
 }
